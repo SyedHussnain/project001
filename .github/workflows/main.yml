@@ -31,10 +31,18 @@ jobs:
           cmd: install 
       
 
-      - name: Yarn Build
-      - uses: borales/actions-yarn@v2.0.0
-        with:
-          cmd: build # will run `yarn build` command
+         # - name: yarn install
+      # - uses: borales/actions-yarn@v2.0.0
+      #   with:
+      #     cmd: install 
+      
+      - name: chimpwizards-npm-build
+        uses: chimpwizards-pipeline/npm-build@v1.0.7
+
+      # - name: Yarn Build
+      # - uses: borales/actions-yarn@v2.0.0
+      #   with:
+      #     cmd: build # will run `yarn build` command
 
           
       - name: Installing surge
